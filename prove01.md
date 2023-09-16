@@ -19,11 +19,11 @@ Identify (with an "X") whether each statement is either a proposition or non-pro
 |:-:|:-:|:-:|
 |I got an A in CSE 280|X||
 |Hello!||X|
-|The hose has a leak.|||
-|The wind speed is greater than 30 miles per hour.|||
-|Close the window.|||
-|The window is closed.|||
-|Are you graduating this semester?|||
+|The hose has a leak.|X||
+|The wind speed is greater than 30 miles per hour.|X||
+|Close the window.||X|
+|The window is closed.|X||
+|Are you graduating this semester?||X|
 
 ## Question 2 (28 points)
 
@@ -42,54 +42,54 @@ Complete the following truth tables (the first one is done for you):
 
 |$p$|$q$|$p \lor q$|
 |:-:|:-:|:-:|
-|T|T||
-|T|F||
-|F|T||
-|F|F||
+|T|T|T|
+|T|F|T|
+|F|T|T|
+|F|F|F|
 
 3. $\neg p \to q$
 
 |$p$|$q$|$\neg p$|$\neg p \to q$|
 |:-:|:-:|:-:|:-:|
-|T|T|||
-|T|F|||
-|F|T|||
-|F|F|||
+|T|T|F|T|
+|T|F|F|T|
+|F|T|T|T|
+|F|F|T|F|
 
 4. $p \land \neg q$
 
 |$p$|$q$|$\neg q$|$p \land \neg q$|
 |:-:|:-:|:-:|:-:|
-|T|T|||
-|T|F|||
-|F|T|||
-|F|F|||
+|T|T|F|F|
+|T|F|T|T|
+|F|T|F|F|
+|F|F|T|F|
 
 5. $p \land (q \lor \neg r)$
 
 |$p$|$q$|$r$|$\neg r$|$q \lor \neg r$|$p \land (q \lor \neg r)$|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|T|T|T||||
-|T|T|F||||
-|T|F|T||||
-|T|F|F||||
-|F|T|T||||
-|F|T|F||||
-|F|F|T||||
-|F|F|F||||
+|T|T|T|F|T|T|
+|T|T|F|T|T|T|
+|T|F|T|F|F|F|
+|T|F|F|T|T|T|
+|F|T|T|F|T|F|
+|F|T|F|T|T|F|
+|F|F|T|F|F|F|
+|F|F|F|T|T|F|
 
 6. $p \lor \neg (\neg q \land \neg r)$
 
 |$p$|$q$|$r$|$\neg q$|$\neg r$|$\neg q \land \neg r$|$\neg (\neg q \land \neg r)$|$p \lor \neg (\neg q \land \neg r)$|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|T|T|T||||||
-|T|T|F||||||
-|T|F|T||||||
-|T|F|F||||||
-|F|T|T||||||
-|F|T|F||||||
-|F|F|T||||||
-|F|F|F||||||
+|T|T|T|F|F|F|T|T|
+|T|T|F|F|T|F|T|T|
+|T|F|T|T|F|F|T|T|
+|T|F|F|T|T|T|F|T|
+|F|T|T|F|F|F|T|T|
+|F|T|F|F|T|F|T|T|
+|F|F|T|T|F|F|T|T|
+|F|F|F|T|T|T|F|F|
 
 ## Question 3 (12 points)
 
@@ -98,12 +98,12 @@ Determine if the following propositions written in English are True or False (th
 |Proposition|True or False|
 |-|-|
 |If $2+2=4$, then pigs can fly.|False|
-|If $2+7=5$, then Elvis is alive.||
-|If pigs can fly, then dogs can't fly.||
-|$2+1=3$ if and only if $1+2=3$.||
-|$1+2=3$ if and only if $3+1=6$.||
-|$1+3=2$ if and only if the earth is flat.||
-|$1 \lt 2$ if an only if $2 \lt 3$.||
+|If $2+7=5$, then Elvis is alive.|False|
+|If pigs can fly, then dogs can't fly.|True|
+|$2+1=3$ if and only if $1+2=3$.|True|
+|$1+2=3$ if and only if $3+1=6$.|False|
+|$1+3=2$ if and only if the earth is flat.|False|
+|$1 \lt 2$ if and only if $2 \lt 3$.|True|
 
 ## Question 4 (5 points)
 
@@ -121,7 +121,10 @@ There is no built-in python function that implements exclusive or.  Implement th
 ```python
 def xor(p, q):
     # Your code here
-    pass
+        if p == q:
+            return False
+        else:
+            return p or q
 
 def truth_table_2_vars(function):
     print(f"{function.__name__}")
