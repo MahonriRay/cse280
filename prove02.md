@@ -110,8 +110,8 @@ Negate each of the following logical statements by adding a negation symbol $\ne
 |$\exists x \forall y \ P(x,y)$|$\forall x \exists y \neg P(x,y)$|
 |$\exists x \exists y \forall z \ \neg P(x,y,z)$|$\forall x \forall y \exists P(x,y,z)$|
 |$\forall x \exists y \forall z \ P(x,y,z)$|$\exists x \forall y \exists z \neg P(x,y,z)$|
-|$\exists x \exists y \ (P(x,y) \land Q(x,y))$||
-|$\forall x \forall y \exists z \ (P(x,y) \to Q(y,z))$||
+|$\exists x \exists y \ (P(x,y) \land Q(x,y))$|$\forall x \forall y (\neg P(x,y) \lor \neg Q(x,y))$|
+|$\forall x \forall y \exists z \ (P(x,y) \to Q(y,z))$|$\exists x \exists y \forall z(P(x,y) \land \neg Q(y,z))$|
 
 ## Question 6 (11 points)
 
@@ -133,10 +133,26 @@ def in_unit_circle(point):
 def forall(predicate, domain):
     print(f"\u2200x ({predicate.__name__}) domain={domain}")
     # Add your code here to return True or False
+    boolVar = True
+    for item in domain:
+        if predicate(item) == True:
+            boolVar = True
+        else:
+            boolVar =  False
+            break
+    return boolVar
 
 def exists(predicate, domain):
     print(f"\u2203x ({predicate.__name__}) domain={domain}")
     # Add your code here to return True or False
+    boolVar = False
+    for item in domain:
+        if predicate(item) == False:
+            boolVar = False
+        else:
+            boolVar = True
+            break
+    return boolVar
 
 numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(forall(is_even,numbers1)) # False
