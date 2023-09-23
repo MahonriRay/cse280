@@ -102,7 +102,7 @@ Determine if the following propositions written in English are True or False (th
 |If pigs can fly, then dogs can't fly.|True|
 |$2+1=3$ if and only if $1+2=3$.|True|
 |$1+2=3$ if and only if $3+1=6$.|False|
-|$1+3=2$ if and only if the earth is flat.|False|
+|$1+3=2$ if and only if the earth is flat.|True|
 |$1 \lt 2$ if and only if $2 \lt 3$.|True|
 
 ## Question 4 (5 points)
