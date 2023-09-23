@@ -5,11 +5,11 @@ file completed or uncompleted in a public file sharing site.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
-**Name**:
+**Name**: Mahonri "Mo" Ray  
 
-**Section**:
+**Section**: MWF 10:15 - 11:15
 
-**Teacher**:
+**Teacher**: Brother Chad MacBeth
 
 ## Question 1 (7 points)
 
