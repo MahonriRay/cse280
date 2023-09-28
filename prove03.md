@@ -5,17 +5,17 @@ file completed or uncompleted in a public file sharing site.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
-**Name**:
+**Name**: Mahonri Mo Ray
 
-**Section**:
+**Section**: MWF 10:15 - 11:15
 
-**Teacher**:
+**Teacher**:Brother Chad MacBeth
 
 ## Question 1 (5 points)
 
 Let $E$ be the set of even numbers, and let $P$ be the set of prime numbers.  Find all the values in the set formed by $E \cap P$.
 
-**Answer**:  
+**Answer**:  It would be 2 and only two since 2 is the only prime number that is also even.
 
 ## Question 2 (5 points)
 
@@ -27,7 +27,7 @@ Let the following sets be given.  The Universal set for this problem is the set 
 
 Translate $(F \cap M) \subseteq C$ into an english sentance.
 
-**Answer**:
+**Answer**: The intersecting students who are math minors and freshmen taken from all of the CS majors 
 
 ## Question 3 (5 points)
 
@@ -35,11 +35,11 @@ For each set described below, list 4 example values that would be in that set.  
 
 |Set|Four Example Values in the Set|
 |:-:|:-:|
-|$\lbrace x \in \mathbf{Z}^+ \mid x-1 \text{ is a multiple of 7} \rbrace$||
-|$\lbrace x \mid x \text{ is a fruit and its skin is normally eaten} \rbrace$||
-|$\lbrace \frac 1 x \mid x \in \mathbf{Z}, x \neq 0 \rbrace$||
-|$\lbrace 2n \mid n \in \mathbf{Z}, n \lt 0 \rbrace$||
-|$\lbrace s \mid s = 1 + 2 + ... + n \text{ for some } n \in \mathbf{Z}^+ \rbrace$||
+|$\lbrace x \in \mathbf{Z}^+ \mid x-1 \text{ is a multiple of 7} \rbrace$|{8,15,22,29}|
+|$\lbrace x \mid x \text{ is a fruit and its skin is normally eaten} \rbrace$|{apple, strawberry, grape, blueberry}|
+|$\lbrace \frac 1 x \mid x \in \mathbf{Z}, x \neq 0 \rbrace$|{$ \frac 1 2, \frac 1 3, \frac 1 4, \frac 1 5$}|
+|$\lbrace 2n \mid n \in \mathbf{Z}, n \lt 0 \rbrace$|{-2, -4, -6, -8}|
+|$\lbrace s \mid s = 1 + 2 + ... + n \text{ for some } n \in \mathbf{Z}^+ \rbrace$|{1, 3, 6, 10}|
 
 ## Question 4 (9 points)
 
@@ -48,15 +48,15 @@ Let $A = \lbrace 0, 2, 3 \rbrace$, $B = \lbrace 2, 3 \rbrace$, and $C = \lbrace 
 |Operation|Resulting Set|
 |:-:|:-:|
 |$A \cap B$|$\lbrace 2, 3 \rbrace$|
-|$A \cup B$||
-|$B \cup A$||
-|$A \cup C$||
-|$A - B$||
-|$B - A$||
-|$\overline{A}$||
-|$\overline{C}$||
-|$A \cap C$||
-|$A \oplus B$||
+|$A \cup B$|$\lbrace 0,2,3 \rbrace$|
+|$B \cup A$|$\lbrace 0,2,3 \rbrace$|
+|$A \cup C$|$\lbrace 0,1,2,3,5,9 \rbrace$|
+|$A - B$|$\lbrace 0 \rbrace$|
+|$B - A$|$\lbrace  \rbrace$|
+|$\overline{A}$|$\lbrace 1,4,5,6,7,8,9 \rbrace$|
+|$\overline{C}$|$\lbrace 0,2,3 \rbrace$|
+|$A \cap C$|$\lbrace  \rbrace$|
+|$A \oplus B$|$\lbrace 0 \rbrace$|
 
 ## Question 5 (4 points)
 
@@ -65,10 +65,10 @@ Let $A=\lbrace 0, 2, 3 \rbrace$, $B=\lbrace 2, 3 \rbrace$, and $C=\lbrace 1, 4\r
 |Cartesian Product|Answer|
 |:-:|:-:|
 |$A \times B$|$\lbrace (0,2), (0,3), (2,2), (2,3), (3,2), (3,3) \rbrace$|
-|$B \times A$||
-|$A \times B \times C$||
-|$A \times \overline{A}$||
-|$B^2$||
+|$B \times A$|$\lbrace (2,0),(2,2),(2,3),(3,0),(3,2),(3,3) \rbrace$|
+|$A \times B \times C$|$\lbrace (0,2,1), (0,2,4) (0,3,1), (0,3,4) (2,2,1), (2,2,4), (2,3,1), (2,3,4), (3,2,1), (3,2,4), (3,3,1), (3,3,4) \rbrace$|
+|$A \times \overline{A}$|$\lbrace \rbrace$|
+|$B^2$|$\lbrace (2,2),(2,3),(3,2),(3,3) \rbrace$|
 
 ## Question 6 (5 points)
 
@@ -80,13 +80,20 @@ Which pairs (there may one pair or more than one pair) of the following sets are
 
 Hint: Make a list of numbers that are in each of these sets.
 
-**Answer**: 
+**Answer**: A $\cap$ B are pairwise disjoint because a number cannot be both even and odd.  
+B $\cap$ C are pairwise disjoint because all non negative powers of two will always be even.
 
 ## Question 7 (5 points)
 
 List all of the partitions  (how many ways can we split according to the rules of partitions) of the set $A = \lbrace a, b, c \rbrace$.
 
-**Answer**: 
+**Answer**:  
+||A|  
+|:-:|:-:|   
+|$P_{1}$|$A_{1} = a,  A_{2} = b, A_{3} = c$|  
+|$P_{2}$|$$A_{1} = a, b, A_{2} = c$$|  
+|$P_{3}$|$$A_{1} = a, A_{2} = b,c$$|  
+|$P_{4}$|$$A_{1} = b, A_{2} = a,c$$|
 
 ## Question 8 (12 points)
 
