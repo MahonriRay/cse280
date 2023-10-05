@@ -54,7 +54,7 @@ Let $A = \lbrace 0, 2, 3 \rbrace$, $B = \lbrace 2, 3 \rbrace$, and $C = \lbrace 
 |$A - B$|$\lbrace 0 \rbrace$|
 |$B - A$|$\lbrace  \rbrace$|
 |$\overline{A}$|$\lbrace 1,4,5,6,7,8,9 \rbrace$|
-|$\overline{C}$|$\lbrace 0,2,3 \rbrace$|
+|$\overline{C}$|$\lbrace 0,2,3,4,6,7,8 \rbrace$|
 |$A \cap C$|$\lbrace  \rbrace$|
 |$A \oplus B$|$\lbrace 0 \rbrace$|
 
@@ -67,7 +67,7 @@ Let $A=\lbrace 0, 2, 3 \rbrace$, $B=\lbrace 2, 3 \rbrace$, and $C=\lbrace 1, 4\r
 |$A \times B$|$\lbrace (0,2), (0,3), (2,2), (2,3), (3,2), (3,3) \rbrace$|
 |$B \times A$|$\lbrace (2,0),(2,2),(2,3),(3,0),(3,2),(3,3) \rbrace$|
 |$A \times B \times C$|$\lbrace (0,2,1), (0,2,4) (0,3,1), (0,3,4) (2,2,1), (2,2,4), (2,3,1), (2,3,4), (3,2,1), (3,2,4), (3,3,1), (3,3,4) \rbrace$|
-|$A \times \overline{A}$|$\lbrace \rbrace$|
+|$A \times \overline{A}$|$\lbrace (0,1),(0,4),(0,5),(0,6),(0,7),(0,8),(0,9),(2,1),(2,4),(2,5),(2,6)(2,7),(2,8),(2,9),(3,1)(3,4)(3,5),(3,6)(3,7),(3,8),(3,9) \rbrace$|
 |$B^2$|$\lbrace (2,2),(2,3),(3,2),(3,3) \rbrace$|
 
 ## Question 6 (5 points)
@@ -81,7 +81,7 @@ Which pairs (there may one pair or more than one pair) of the following sets are
 Hint: Make a list of numbers that are in each of these sets.
 
 **Answer**: A $\cap$ B are pairwise disjoint because a number cannot be both even and odd.  
-B $\cap$ C are pairwise disjoint because all non negative powers of two will always be even.
+B $\cap$ C are not pairwise disjoint because all non negative powers of two will always be even except for zero. 0 $\mathbb{^2} = 1, which is odd.$
 
 ## Question 7 (5 points)
 
@@ -94,6 +94,7 @@ List all of the partitions  (how many ways can we split according to the rules o
 |$P_{2}$|$$A_{1} = a, b, A_{2} = c$$|  
 |$P_{3}$|$$A_{1} = a, A_{2} = b,c$$|  
 |$P_{4}$|$$A_{1} = b, A_{2} = a,c$$|
+|$P_{5}$|$$A_{1} = a,b,c$$
 
 ## Question 8 (12 points)
 
@@ -112,10 +113,10 @@ Use the starting code below to create set comprehensions as follows:
 
 
 ```python
-Set1 = None # Add Set Comprehension Code Here
-Set2 = None # Add Set Comprehension Code Here
-Set3 = None # Add Set Comprehension Code Here
-Set4 = None # Add Set Comprehension Code Here
+Set1 = {1/(2**i) for i in range(1,5)} # Add Set Comprehension Code Here
+Set2 = {i**2 for i in range(-2,3)} # Add Set Comprehension Code Here
+Set3 = {i for i in range(1,25) if (24%i ==0)} # Add Set Comprehension Code Here
+Set4 = {i for i in range(-10,11) if(i%2 != 0)} # Add Set Comprehension Code Here
 
 # Note that sets do not maintain order so it may vary
 print(Set1)
