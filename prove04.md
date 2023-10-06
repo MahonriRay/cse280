@@ -5,11 +5,11 @@ file completed or uncompleted in a public file sharing site.
 
 **Instructions**: Answer each question using proper markdown notation as needed.  Use the preview view in Visual Studio Code (or another editor if desired) to see the formatting, tables, and mathematical formula properly rendered.  If you need to write code, then first test your code in a separate file and then copy the code into this document using code fences. 
 
-**Name**:
+**Name**: Mahonri "Mo" Ray  
 
-**Section**:
+**Section**: MWF 10:15 - 11:15
 
-**Teacher**:
+**Teacher**: Brother Chad MacBeth
 
 ## Question 1 (24 points)
 
@@ -18,22 +18,22 @@ For each of these functions, determine if they are well-defined, one-to-one, and
 |Function|Well-Defined|One-to-One|Onto|
 |:-:|:-:|:-:|:-:|
 |$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(3,c),(4,d) \rbrace$|Yes|Yes|Yes|
-|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,a),(3,b),(4,d) \rbrace$||||
-|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(3,c) \rbrace$||||
-|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(2,c),(3,a),(4,a) \rbrace$||||
-|$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^3-x$||||
-|$f : \mathbf{Z} \to \mathbf{Z}, \text{ where } f(x) = -x+2$||||
-|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {n}{2} \rceil$||||
-|$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$||||
-|$f : \lbrace x \mid x \in \mathbf{R} , x \ne 5 \rbrace \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$||||
+|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,a),(3,b),(4,d) \rbrace$|Yes|No|No|
+|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(3,c) \rbrace$|No|No|No|
+|$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(2,c),(3,a),(4,a) \rbrace$|No|No|No|
+|$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^3-x$|Yes|No|Yes|
+|$f : \mathbf{Z} \to \mathbf{Z}, \text{ where } f(x) = -x+2$|Yes|Yes|Yes|
+|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {n}{2} \rceil$|Yes|Yes|Yes|
+|$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$|No|No|No|
+|$f : \lbrace x \mid x \in \mathbf{R} , x \ne 5 \rbrace \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$|Yes|Yes|Yes|
 
 ## Question 2 (9 points)
 
 Explain why $f : \mathbf{R} \to \mathbf{R} \text{ where } f(x) = x^2$ is a well defined funtion but is niether one-to-one nor onto (with counterexamples as needed).
 
 **Answer**:  
-* Is Well Defined because ...
-* Not One-to-One because ...
+* Is Well Defined because for all x $\in$ X there is only one corresponding y where f(x) = y. Ex. f(-2) = 4, f(1) = 1, f(2) = 4, etc..
+* Not One-to-One because as it can be seen in my previous answer, f(-2) AND f(2) = 4. Although this constitutes a Well Defined function, One to One functions only have one corresponding x for every y.
 * Not Onto because ...
 
 ## Question 3 (9 points)
@@ -42,9 +42,9 @@ Find the inverse of each of the following functions, calculate $f(3)$, and then 
 
 |Domain|$f(x)$|$f^{-1}(x)$|$f(3)$|$(f^{-1} \circ f)(3)$
 |:-:|:-:|:-:|:-:|:-:|
-|$f : \mathbf{R} \to \mathbf{R}$|$2x+3$||||
-|$f : \lbrace x \in \mathbf{R} : x \gt 0 \rbrace \to \mathbf{R}$|$3^x$||||
-|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$||||
+|$f : \mathbf{R} \to \mathbf{R}$|$2x+3$|$\frac {x-3} 2$|9|3|
+|$f : \lbrace x \in \mathbf{R} : x \gt 0 \rbrace \to \mathbf{R}$|$3^x$|$\frac {ln(X)} {ln(3)}$|27|3|
+|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$|$\sqrt{x+2}$|$\sqrt{5}|3|
 
 
 ## Question 4 (8 points)
