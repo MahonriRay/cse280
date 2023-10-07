@@ -34,7 +34,7 @@ Explain why $f : \mathbf{R} \to \mathbf{R} \text{ where } f(x) = x^2$ is a well 
 **Answer**:  
 * Is Well Defined because for all x $\in$ X there is only one corresponding y where f(x) = y. Ex. f(-2) = 4, f(1) = 1, f(2) = 4, etc..
 * Not One-to-One because as it can be seen in my previous answer, f(-2) AND f(2) = 4. Although this constitutes a Well Defined function, One to One functions only have one corresponding x for every y.
-* Not Onto because ...
+* Not Onto because $\mathbb{R}$ inlcudes negative numbers and as such there is no way for a number to be squared in a function and return a negative number. Since $\mathbb{R}$ includes these negative numbers, there are y values such that f(x) $\neq$ y
 
 ## Question 3 (9 points)
 
