@@ -44,7 +44,7 @@ Find the inverse of each of the following functions, calculate $f(3)$, and then 
 |:-:|:-:|:-:|:-:|:-:|
 |$f : \mathbf{R} \to \mathbf{R}$|$2x+3$|$\frac {x-3} 2$|9|3|
 |$f : \lbrace x \in \mathbf{R} : x \gt 0 \rbrace \to \mathbf{R}$|$3^x$|$\frac {ln(X)} {ln(3)}$|27|3|
-|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$|$\sqrt{x+2}$|$\sqrt{5}|3|
+|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$|$\sqrt{x+2}$|$\sqrt{5}$|3|
 
 
 ## Question 4 (8 points)
@@ -58,9 +58,9 @@ Create lambda functions to implement the following functions that have domain of
 The test code below will use the lambda functions to generate the set of all $(X, f(X))$ where $X=\lbrace x \in \mathbf{Z} : -5 \le x \le 5 \rbrace$:
 
 ```python
-f1 = None # Put your lambda code here
-f2 = None # Put your lambda code here
-f3 = None # Put your lambda code here
+f1 = lambda x : (x**3)+(x**2)+x+1  # Put your lambda code here
+f2 = lambda x : (3*x) + 5 # Put your lambda code here
+f3 = lambda x : (x*(x+1))/2 # Put your lambda code here
 
 domain = range(-5,6)
 f1_points = {(x,f1(x)) for x in domain}
