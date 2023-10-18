@@ -23,9 +23,9 @@ For each of these functions, determine if they are well-defined, one-to-one, and
 |$f : A \to B, \text{ where } f = \lbrace (1,a),(2,b),(2,c),(3,a),(4,a) \rbrace$|No|No|No|
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = x^3-x$|Yes|No|Yes|
 |$f : \mathbf{Z} \to \mathbf{Z}, \text{ where } f(x) = -x+2$|Yes|Yes|Yes|
-|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {n}{2} \rceil$|Yes|Yes|Yes|
+|$f : \mathbf{Z}^+ \to \mathbf{Z}^+, \text{ where } f(x) = \lceil \frac {n}{2} \rceil$|Yes|No|No|
 |$f : \mathbf{R} \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$|No|No|No|
-|$f : \lbrace x \mid x \in \mathbf{R} , x \ne 5 \rbrace \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$|Yes|Yes|Yes|
+|$f : \lbrace x \mid x \in \mathbf{R} , x \ne 5 \rbrace \to \mathbf{R}, \text{ where } f(x) = \frac{5}{x-5}$|Yes|No|No|
 
 ## Question 2 (9 points)
 
@@ -44,7 +44,7 @@ Find the inverse of each of the following functions, calculate $f(3)$, and then 
 |:-:|:-:|:-:|:-:|:-:|
 |$f : \mathbf{R} \to \mathbf{R}$|$2x+3$|$\frac {x-3} 2$|9|3|
 |$f : \lbrace x \in \mathbf{R} : x \gt 0 \rbrace \to \mathbf{R}$|$3^x$|$\frac {ln(X)} {ln(3)}$|27|3|
-|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$|$\sqrt{x+2}$|$\sqrt{5}$|3|
+|$f : \lbrace x \in \mathbf{R} : x \ge -2 \rbrace \to \mathbf{R}^+$|$x^2-2$|$\sqrt{x+2}$|7|3|
 
 
 ## Question 4 (8 points)
